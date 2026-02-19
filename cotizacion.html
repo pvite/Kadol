@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadol SpA | Solicitar Cotización</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            navy: '#1e293b',
+            progray: '#64748b',
+            accent: '#f97316'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+  <!-- NAV -->
+  <header class="bg-white/90 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 bg-navy text-white rounded-lg flex items-center justify-center font-bold">K</div>
+          <span class="text-lg font-semibold text-navy">Kadol SpA</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+          <a class="hover:text-navy" href="index.html">Inicio</a>
+          <a class="hover:text-navy" href="catalogo.html">Catálogo</a>
+          <a class="hover:text-navy" href="nosotros.html">Nosotros</a>
+        </nav>
+        <div class="flex items-center space-x-2">
+          <a href="https://wa.me/56988090687" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 rounded-md border border-navy text-navy font-semibold hover:bg-navy hover:text-white transition">
+            Hablar con Ventas
+          </a>
+          <a href="cotizacion.html" class="inline-flex items-center px-4 py-2 rounded-md bg-accent text-white font-semibold shadow-sm hover:shadow-lg transition">
+            Solicitar Cotización
+          </a>
+        </div>
+        <button class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-200 text-navy" aria-label="Abrir menú">
+          <span class="block w-5 h-0.5 bg-navy"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Formulario de cotización -->
+  <section id="form" class="max-w-6xl mx-auto px-4 lg:px-6 py-14">
+    <div class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-2xl shadow-md p-6 md:p-8">
+      <div class="mb-6">
+        <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">Formulario</p>
+        <h2 class="text-2xl font-bold text-navy">Solicitud de cotización</h2>
+        <p class="text-progray text-sm">Completa el formulario y recibe una cotización personalizada.</p>
+      </div>
+      <form class="grid gap-4 md:grid-cols-2">
+        <label class="flex flex-col text-sm text-navy">
+          Nombre y apellido
+          <input required type="text" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Ej: Ana Pérez">
+        </label>
+        <label class="flex flex-col text-sm text-navy">
+          Empresa
+          <input required type="text" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Ej: Minera Andes">
+        </label>
+        <label class="flex flex-col text-sm text-navy">
+          Email
+          <input required type="email" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="correo@empresa.cl">
+        </label>
+        <label class="flex flex-col text-sm text-navy">
+          Teléfono / WhatsApp
+          <input required type="tel" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="+56 9 ...">
+        </label>
+        <label class="flex flex-col text-sm text-navy">
+          Rubro
+          <select class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 bg-white focus:outline-none focus:ring-2 focus:ring-accent">
+            <option>Industrial / Minería</option>
+            <option>Construcción</option>
+            <option>Logística</option>
+            <option>Retail / Corporativo</option>
+            <option>Gastronomía / Cocina</option>
+            <option>Salud</option>
+            <option>Otro</option>
+          </select>
+        </label>
+        <label class="flex flex-col text-sm text-navy">
+          Prenda o línea a cotizar
+          <input type="text" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Ej: Buzo ignífugo, polera corporativa">
+        </label>
+        <label class="flex flex-col text-sm text-navy">
+          Cantidad estimada
+          <input type="number" min="1" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Ej: 120">
+        </label>
+        <label class="flex flex-col text-sm text-navy">
+          Tallas requeridas
+          <input type="text" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Ej: S (20), M (50), L (40), XL (10)">
+        </label>
+        <label class="flex flex-col text-sm text-navy">
+          Fecha límite / urgencia
+          <input type="date" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent">
+        </label>
+        <label class="flex flex-col text-sm text-navy">
+          Ciudad / Región
+          <input type="text" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Ej: Santiago, Antofagasta">
+        </label>
+        <label class="flex flex-col text-sm text-navy md:col-span-2">
+          Detalles adicionales
+          <textarea rows="4" class="mt-1 rounded-md border border-slate-300 px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Normativas (alta visibilidad, ignífugo), ubicación de logo, tipo de bordado/estampado, servicios adicionales."></textarea>
+        </label>
+        <div class="md:col-span-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <label class="inline-flex items-center gap-2 text-sm text-progray">
+            <input type="checkbox" class="rounded border-slate-300 text-accent focus:ring-accent">
+            Quiero servicio express (sujeto a factibilidad)
+          </label>
+          <button type="submit" class="inline-flex items-center px-5 py-3 rounded-md bg-accent text-white font-semibold shadow-lg hover:-translate-y-0.5 transition">Enviar cotización</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pasos claros -->
+  <section class="bg-white border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6 py-12 grid md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-xl border border-slate-200 bg-slate-50">
+        <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">1. Brief</p>
+        <h3 class="text-lg font-semibold text-navy">Revisamos tu requerimiento en 4h.</h3>
+        <p class="text-sm text-progray">Validamos normas, plazos y cantidades; proponemos ficha técnica.</p>
+      </div>
+      <div class="p-6 rounded-xl border border-slate-200 bg-slate-50">
+        <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">2. Muestra & fit</p>
+        <h3 class="text-lg font-semibold text-navy">Aprobación rápida de color y tallas.</h3>
+        <p class="text-sm text-progray">Opciones de bordado/estampado y control de tallaje.</p>
+      </div>
+      <div class="p-6 rounded-xl border border-slate-200 bg-slate-50">
+        <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">3. Producción & despacho</p>
+        <h3 class="text-lg font-semibold text-navy">Entrega 10-15 días o express.</h3>
+        <p class="text-sm text-progray">Seguimiento y post-venta para ajustes o reposiciones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-200">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-lg font-semibold text-white">Sobre Kadol</h4>
+        <p class="text-sm text-slate-400">Más de 30 años vistiendo y protegiendo a la industria chilena con uniformes y EPP de alta calidad.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold text-white">Nuestras Líneas</h4>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a class="hover:text-accent" href="catalogo.html#corp">Ropa Corporativa e Institucional</a></li>
+          <li><a class="hover:text-accent" href="catalogo.html#industrial">Ropa Industrial y Alta Visibilidad</a></li>
+          <li><a class="hover:text-accent" href="catalogo.html#gastro">Línea Gastronómica</a></li>
+          <li><a class="hover:text-accent" href="catalogo.html#epp">Elementos de Protección Personal (EPP)</a></li>
+          <li><a class="hover:text-accent" href="catalogo.html#especiales">Confecciones Especiales</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold text-white">Contacto</h4>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a class="hover:text-accent" href="mailto:ventas@kadol.cl">ventas@kadol.cl</a></li>
+          <li><a class="hover:text-accent" href="tel:+56988090687">+56 9 8809 0687</a></li>
+          <li><a class="hover:text-accent" href="https://wa.me/56988090687" target="_blank" rel="noopener">Hablar por WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
+      © 2026 Kadöl SpA. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadol SpA | Nosotros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            navy: '#1e293b',
+            progray: '#64748b',
+            accent: '#f97316'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+  <!-- NAV -->
+  <header class="bg-white/90 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 bg-navy text-white rounded-lg flex items-center justify-center font-bold">K</div>
+          <span class="text-lg font-semibold text-navy">Kadol SpA</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+          <a class="hover:text-navy" href="index.html">Inicio</a>
+          <a class="hover:text-navy" href="catalogo.html">Catálogo</a>
+          <a class="hover:text-navy" href="nosotros.html">Nosotros</a>
+        </nav>
+        <div class="flex items-center space-x-2">
+          <a href="https://wa.me/56988090687" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 rounded-md border border-navy text-navy font-semibold hover:bg-navy hover:text-white transition">
+            Hablar con Ventas
+          </a>
+          <a href="cotizacion.html" class="inline-flex items-center px-4 py-2 rounded-md bg-accent text-white font-semibold shadow-sm hover:shadow-lg transition">
+            Solicitar Cotización
+          </a>
+        </div>
+        <button class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-200 text-navy" aria-label="Abrir menú">
+          <span class="block w-5 h-0.5 bg-navy"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Historia y Experiencia -->
+  <section id="historia" class="max-w-6xl mx-auto px-4 lg:px-6 py-14 grid lg:grid-cols-2 gap-10 items-center">
+    <div class="space-y-5">
+      <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">Historia & Experiencia</p>
+      <h2 class="text-2xl lg:text-3xl font-bold text-navy">Una marca joven respaldada por décadas de dominio técnico.</h2>
+      <p class="text-progray">Kadöl lleva 5 años como marca, pero nuestro equipo técnico suma más de 30 años liderando el mercado de seguridad industrial en Chile. Hemos vestido faenas mineras, plantas productivas, cadenas gastronómicas y corporativos que exigen cumplimiento normativo y coherencia de marca.</p>
+      <p class="text-slate-600">No solo vendemos uniformes; entregamos soluciones, respuestas rápidas y productos de alta calidad certificada.</p>
+      <div class="flex flex-wrap gap-3 text-sm">
+        <span class="px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-navy">ISO / Normativas de seguridad</span>
+        <span class="px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-navy">Control de tallas & fitting</span>
+        <span class="px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-navy">Cobertura logística nacional</span>
+      </div>
+    </div>
+    <div class="bg-white shadow-xl rounded-2xl overflow-hidden border border-slate-200">
+      <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1000" alt="Taller de confección">
+    </div>
+  </section>
+
+  <!-- Nuestros Pilares -->
+  <section id="pilares" class="bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6 py-14">
+      <div class="flex items-center justify-between mb-10">
+        <div>
+          <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">Valor agregado</p>
+          <h3 class="text-2xl font-bold text-navy">Nuestros pilares para tu operación.</h3>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-accent/15 text-accent flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h4 class="text-lg font-semibold text-navy">Experiencia Técnica</h4>
+          <p class="text-sm text-progray">Asesoría experta para elegir el producto adecuado según norma, riesgo y clima. No vendemos por vender.</p>
+        </article>
+        <article class="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-accent/15 text-accent flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h18v13H3z"/><path d="M16 21l-4-4-4 4"/></svg>
+          </div>
+          <h4 class="text-lg font-semibold text-navy">Velocidad Récord</h4>
+          <p class="text-sm text-progray">Compromiso de entrega en 10-15 días con capacidad express para urgencias de operación.</p>
+        </article>
+        <article class="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-accent/15 text-accent flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h4 class="text-lg font-semibold text-navy">Post-Venta Real</h4>
+          <p class="text-sm text-progray">Respuestas rápidas para reposiciones, tallajes y ajustes. Nos quedamos hasta que el equipo esté cómodo y seguro.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capacidades Técnicas -->
+  <section id="capacidades" class="max-w-6xl mx-auto px-4 lg:px-6 py-14">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">Qué hacemos</p>
+        <h3 class="text-2xl font-bold text-navy">Capacidades técnicas y oferta completa.</h3>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div class="bg-white border border-slate-200 rounded-xl p-5 space-y-2 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-accent/15 text-accent flex items-center justify-center">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </div>
+        <h4 class="font-semibold text-navy">Confección a medida</h4>
+        <p class="text-sm text-progray">Patrones, fitting y control de tallas para cuadrillas completas.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-5 space-y-2 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-accent/15 text-accent flex items-center justify-center">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+        </div>
+        <h4 class="font-semibold text-navy">Bordado computarizado</h4>
+        <p class="text-sm text-progray">Logos nítidos y durables, consistentes entre sedes.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-5 space-y-2 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-accent/15 text-accent flex items-center justify-center">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v10H4z"/><path d="M8 18h8"/></svg>
+        </div>
+        <h4 class="font-semibold text-navy">Estampado DTF / Serigrafía</h4>
+        <p class="text-sm text-progray">Colores vivos para equipos en terreno o punto de venta.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-xl p-5 space-y-2 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-accent/15 text-accent flex items-center justify-center">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 4l7 16H5z"/></svg>
+        </div>
+        <h4 class="font-semibold text-navy">Sublimado full color</h4>
+        <p class="text-sm text-progray">Uniformes livianos y respirables con branding completo.</p>
+      </div>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-sm text-progray">
+      <p class="font-semibold text-navy mb-2">Oferta integrada</p>
+      <p>Ropa corporativa, institucional, industrial, de cocina y una línea completa de EPP: cascos, anteojos, guantes, protección auditiva y más.</p>
+    </div>
+  </section>
+
+  <!-- Promesa -->
+  <section class="max-w-6xl mx-auto px-4 lg:px-6 pb-12">
+    <div class="rounded-2xl border border-accent/60 bg-accent/10 text-navy p-8 shadow-xl">
+      <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold mb-3">Nuestra Promesa</p>
+      <h4 class="text-xl font-bold mb-2">Si tienes un requerimiento urgente, nosotros respondemos.</h4>
+      <p class="text-progray">Damos soluciones donde otros ponen trabas. Activamos producción express, coordinamos logística y mantenemos comunicación diaria hasta la entrega.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-200">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-lg font-semibold text-white">Sobre Kadol</h4>
+        <p class="text-sm text-slate-400">Más de 30 años vistiendo y protegiendo a la industria chilena con uniformes y EPP de alta calidad.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold text-white">Nuestras Líneas</h4>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a class="hover:text-accent" href="catalogo.html#corp">Ropa Corporativa e Institucional</a></li>
+          <li><a class="hover:text-accent" href="catalogo.html#industrial">Ropa Industrial y Alta Visibilidad</a></li>
+          <li><a class="hover:text-accent" href="catalogo.html#gastro">Línea Gastronómica</a></li>
+          <li><a class="hover:text-accent" href="catalogo.html#epp">Elementos de Protección Personal (EPP)</a></li>
+          <li><a class="hover:text-accent" href="catalogo.html#especiales">Confecciones Especiales</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold text-white">Contacto</h4>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a class="hover:text-accent" href="mailto:ventas@kadol.cl">ventas@kadol.cl</a></li>
+          <li><a class="hover:text-accent" href="tel:+56988090687">+56 9 8809 0687</a></li>
+          <li><a class="hover:text-accent" href="https://wa.me/56988090687" target="_blank" rel="noopener">Hablar por WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
+      © 2026 Kadöl SpA. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>

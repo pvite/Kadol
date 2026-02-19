@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadol SpA | Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            navy: '#1e293b',
+            progray: '#64748b',
+            accent: '#f97316'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+  <!-- NAV -->
+  <header class="bg-white/90 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 bg-navy text-white rounded-lg flex items-center justify-center font-bold">K</div>
+          <span class="text-lg font-semibold text-navy">Kadol SpA</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+          <a class="hover:text-navy" href="index.html">Inicio</a>
+          <a class="hover:text-navy" href="catalogo.html">Catálogo</a>
+          <a class="hover:text-navy" href="nosotros.html">Nosotros</a>
+        </nav>
+        <div class="flex items-center space-x-2">
+          <a href="https://wa.me/56988090687" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-4 py-2 rounded-md border border-navy text-navy font-semibold hover:bg-navy hover:text-white transition">
+            Hablar con Ventas
+          </a>
+          <a href="cotizacion.html" class="inline-flex items-center px-4 py-2 rounded-md bg-accent text-white font-semibold shadow-sm hover:shadow-lg transition">
+            Solicitar Cotización
+          </a>
+        </div>
+        <button class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-200 text-navy" aria-label="Abrir menú">
+          <span class="block w-5 h-0.5 bg-navy"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Título Catálogo -->
+  <section class="bg-gradient-to-br from-slate-100 to-slate-200 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6 py-12 flex flex-col gap-3">
+      <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">Catálogo</p>
+      <h1 class="text-3xl lg:text-4xl font-bold text-navy">Catálogo de Equipamiento Integral</h1>
+      <p class="text-progray text-lg">Selecciona una categoría para ver nuestras soluciones en vestuario y protección.</p>
+    </div>
+  </section>
+
+  <!-- Layout catálogo -->
+  <main class="max-w-6xl mx-auto px-4 lg:px-6 py-12 grid lg:grid-cols-4 gap-8">
+    <!-- Sidebar -->
+    <aside class="lg:col-span-1 space-y-6">
+      <div class="bg-white border border-slate-200 rounded-xl shadow-sm">
+        <div class="p-4 border-b border-slate-200">
+          <h2 class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">Categorías</h2>
+        </div>
+        <nav class="divide-y divide-slate-200">
+          <a class="block px-4 py-3 text-navy hover:bg-slate-50 hover:text-accent transition" href="#corp">Ropa Corporativa e Institucional</a>
+          <a class="block px-4 py-3 text-navy hover:bg-slate-50 hover:text-accent transition" href="#industrial">Ropa Industrial y Alta Visibilidad</a>
+          <a class="block px-4 py-3 text-navy hover:bg-slate-50 hover:text-accent transition" href="#gastro">Línea Gastronómica</a>
+          <a class="block px-4 py-3 text-navy hover:bg-slate-50 hover:text-accent transition" href="#epp">Elementos de Protección Personal (EPP)</a>
+          <a class="block px-4 py-3 text-navy hover:bg-slate-50 hover:text-accent transition" href="#especiales">Confecciones Especiales</a>
+        </nav>
+      </div>
+      <div class="bg-navy text-white rounded-xl p-5 shadow-lg">
+        <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">Asesoría</p>
+        <h3 class="text-lg font-semibold mt-2">¿Necesitas asesoría técnica?</h3>
+        <p class="text-sm text-slate-200">Más de 30 años de experiencia a tu servicio.</p>
+        <a href="cotizacion.html#form" class="mt-4 inline-flex items-center px-4 py-2 rounded-md bg-accent text-white font-semibold shadow hover:-translate-y-0.5 transition">Hablar con un asesor</a>
+      </div>
+    </aside>
+
+    <!-- Grid productos -->
+    <section class="lg:col-span-3 space-y-10">
+      <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6" id="corp">
+        <!-- Producto 1 -->
+        <article class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden">
+          <div class="relative">
+            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent/15 text-accent">Personalizable</span>
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800" alt="Camisa corporativa">
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-semibold text-navy">Camisa Oxford</h3>
+            <p class="text-sm text-progray">Algodón 100%, botonadura reforzada, ideal para front-office.</p>
+            <button class="mt-2 inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-semibold hover:-translate-y-0.5 transition">Añadir a Cotización</button>
+          </div>
+        </article>
+        <!-- Producto 2 -->
+        <article class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden" id="industrial">
+          <div class="relative">
+            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent/15 text-accent">Servicio Express</span>
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800" alt="Overol industrial">
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-semibold text-navy">Overol de alta visibilidad</h3>
+            <p class="text-sm text-progray">Franjas reflectivas, tejido ignífugo y costuras triple aguja.</p>
+            <button class="mt-2 inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-semibold hover:-translate-y-0.5 transition">Añadir a Cotización</button>
+          </div>
+        </article>
+        <!-- Producto 3 -->
+        <article class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden" id="gastro">
+          <div class="relative">
+            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent/15 text-accent">Personalizable</span>
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800" alt="Línea gastronómica">
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-semibold text-navy">Filipina chef</h3>
+            <p class="text-sm text-progray">Tejido respirable, antimanchas y opción de vivo de color.</p>
+            <button class="mt-2 inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-semibold hover:-translate-y-0.5 transition">Añadir a Cotización</button>
+          </div>
+        </article>
+        <!-- Producto 4 -->
+        <article class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden" id="epp">
+          <div class="relative">
+            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent/15 text-accent">Servicio Express</span>
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1504113888839-1c8eb50233d3?auto=format&fit=crop&q=80&w=800" alt="EPP casco">
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-semibold text-navy">Casco de seguridad</h3>
+            <p class="text-sm text-progray">Suspensión de 4 puntos, certificación ANSI/EN397.</p>
+            <button class="mt-2 inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-semibold hover:-translate-y-0.5 transition">Añadir a Cotización</button>
+          </div>
+        </article>
+        <!-- Producto 5 -->
+        <article class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden" id="especiales">
+          <div class="relative">
+            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent/15 text-accent">Personalizable</span>
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&q=80&w=800" alt="Buzo térmico">
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-semibold text-navy">Buzo térmico</h3>
+            <p class="text-sm text-progray">Forro polar, cierres termosellados y refuerzos en rodilla.</p>
+            <button class="mt-2 inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-semibold hover:-translate-y-0.5 transition">Añadir a Cotización</button>
+          </div>
+        </article>
+        <!-- Producto 6 -->
+        <article class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden">
+          <div class="relative">
+            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent/15 text-accent">Servicio Express</span>
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1617032213042-09e8262b8d6b?auto=format&fit=crop&q=80&w=800" alt="Guantes de seguridad">
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-semibold text-navy">Guante anticorte</h3>
+            <p class="text-sm text-progray">Nivel de corte ANSI A4, palma nitrilo foam para agarre.</p>
+            <button class="mt-2 inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-semibold hover:-translate-y-0.5 transition">Añadir a Cotización</button>
+          </div>
+        </article>
+        <!-- Producto 7 -->
+        <article class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden">
+          <div class="relative">
+            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent/15 text-accent">Personalizable</span>
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1521120098171-34c0b2d52588?auto=format&fit=crop&q=80&w=800" alt="Polera técnica">
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-semibold text-navy">Polera técnica</h3>
+            <p class="text-sm text-progray">Secado rápido, protección UV y opción de sublimado full color.</p>
+            <button class="mt-2 inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-semibold hover:-translate-y-0.5 transition">Añadir a Cotización</button>
+          </div>
+        </article>
+        <!-- Producto 8 -->
+        <article class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden">
+          <div class="relative">
+            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent/15 text-accent">Servicio Express</span>
+            <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80&w=800" alt="Zapato de seguridad">
+          </div>
+          <div class="p-4 space-y-2">
+            <h3 class="text-lg font-semibold text-navy">Zapato de seguridad</h3>
+            <p class="text-sm text-progray">Punta composite, suela antideslizante SRC y plantilla anti-perforación.</p>
+            <button class="mt-2 inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-semibold hover:-translate-y-0.5 transition">Añadir a Cotización</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Banner de personalización -->
+  <section class="bg-navy text-white">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6 py-12 grid md:grid-cols-2 gap-6 items-center">
+      <div class="space-y-3">
+        <p class="text-sm uppercase tracking-[0.2em] text-accent font-semibold">Personalización</p>
+        <h3 class="text-2xl font-bold">Tu marca donde debe estar.</h3>
+        <p class="text-slate-200">Entrega de pedidos personalizados en 10-15 días.</p>
+        <div class="flex flex-wrap gap-3 text-sm">
+          <span class="px-3 py-1 rounded-full bg-white/10 border border-white/20">Bordado</span>
+          <span class="px-3 py-1 rounded-full bg-white/10 border border-white/20">Estampado</span>
+          <span class="px-3 py-1 rounded-full bg-white/10 border border-white/20">Sublimado</span>
+        </div>
+      </div>
+      <div class="bg-white text-navy rounded-2xl shadow-2xl p-6 space-y-3">
+        <div class="flex items-center justify-between">
+          <p class="text-sm font-semibold text-progray">Ready to brand</p>
+          <span class="px-3 py-1 rounded-full bg-accent/15 text-accent text-xs font-semibold">10-15 días</span>
+        </div>
+        <p class="text-progray text-sm">Sube tu logo y especificaciones en el formulario de cotización para recibir mockups y pruebas de color.</p>
+        <a href="cotizacion.html#form" class="inline-flex items-center px-5 py-3 rounded-md bg-accent text-white font-semibold shadow-lg hover:-translate-y-0.5 transition">Solicitar Cotización</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-slate-900 text-slate-200">
+    <div class="max-w-6xl mx-auto px-4 lg:px-6 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-lg font-semibold text-white">Kadol SpA</h4>
+        <p class="text-sm text-slate-400">Uniformes y EPP con cobertura nacional.</p>
+      </div>
+      <div class="space-y-2">
+        <p class="text-sm font-semibold text-white">Contacto</p>
+        <p class="text-sm">Andrés Carvajal</p>
+        <p class="text-sm">ventas@kadolspa.cl</p>
+        <p class="text-sm">+56 9 1234 5678</p>
+      </div>
+      <div class="space-y-2">
+        <p class="text-sm font-semibold text-white">Legal & Redes</p>
+        <div class="flex items-center space-x-4 text-sm">
+          <a class="hover:text-accent" href="#">Términos</a>
+          <a class="hover:text-accent" href="#">Política de Privacidad</a>
+          <a class="hover:text-accent" href="#">LinkedIn</a>
+          <a class="hover:text-accent" href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
+      © 2026 Kadol SpA. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>
