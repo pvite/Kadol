@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadol SpA | Productos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            display: ['Barlow Condensed', 'Inter', 'ui-sans-serif', 'system-ui']
+          },
+          colors: {
+            navy: '#243242',
+            accent: '#d86b1f',
+            steel: '#536170',
+            sand: '#ece5d8',
+            signal: '#f0a62f'
+          },
+          boxShadow: {
+            soft: '0 26px 55px -30px rgba(22, 32, 42, 0.32)'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="page-shell home-page font-sans text-slate-900 antialiased selection:bg-accent/20">
+  <header class="site-header sticky top-0 z-50 text-white shadow-sm">
+    <div class="home-topbar">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.24em] lg:px-8">
+        <span>Asesoria comercial con foco tecnico</span>
+        <span>Vestuario corporativo, industrial, outdoor y EPP</span>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex min-h-[72px] items-center justify-between gap-6">
+        <a href="index.html" class="flex items-center gap-3">
+          <span class="flex h-11 w-11 items-center justify-center rounded-none bg-signal text-lg font-black text-slate-950">K</span>
+          <div class="leading-tight">
+            <span class="block text-xl font-extrabold tracking-[0.18em] text-white">KADOL</span>
+            <span class="block text-[11px] uppercase tracking-[0.3em] text-slate-300">Soluciones Tecnicas</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+          <a href="index.html" class="transition hover:text-white">Inicio</a>
+          <a href="productos.html" class="text-white">Productos</a>
+          <a href="nosotros.html" class="transition hover:text-white">Nosotros</a>
+          <a href="cotizacion.html" class="transition hover:text-white">Cotizacion</a>
+        </nav>
+        <a href="https://wa.me/56988090687" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 rounded-none bg-signal px-4 py-2 text-sm font-bold text-slate-950 transition hover:brightness-105">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2C6.62 2 2.22 6.39 2.22 11.8c0 1.73.45 3.42 1.3 4.91L2 22l5.43-1.43a9.76 9.76 0 0 0 4.6 1.17h.01c5.4 0 9.79-4.4 9.79-9.8 0-2.62-1.02-5.08-2.78-6.99ZM12.04 20.1h-.01a8.13 8.13 0 0 1-4.14-1.13l-.3-.18-3.22.85.86-3.14-.2-.32a8.14 8.14 0 0 1-1.25-4.37c0-4.49 3.66-8.15 8.16-8.15 2.18 0 4.23.85 5.77 2.39a8.09 8.09 0 0 1 2.38 5.77c0 4.5-3.65 8.16-8.15 8.16Zm4.47-6.12c-.24-.12-1.41-.7-1.63-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.17-1.39-1.31-1.62-.14-.24-.01-.36.11-.48.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.79-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 1.99s.86 2.3.98 2.46c.12.16 1.68 2.56 4.07 3.59.57.24 1.01.39 1.35.5.57.18 1.08.16 1.49.1.45-.07 1.41-.58 1.61-1.15.2-.56.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/>
+          </svg>
+          Hablar con un asesor
+        </a>
+      </div>
+      <div class="md:hidden border-t border-white/10 py-3">
+        <nav class="flex gap-2 overflow-x-auto pb-1 text-xs font-bold uppercase tracking-[0.18em] text-slate-300">
+          <a href="index.html" class="rounded-none border border-white/10 px-3 py-2">Inicio</a>
+          <a href="productos.html" class="rounded-none border border-white/15 bg-white/10 px-3 py-2 text-white">Productos</a>
+          <a href="nosotros.html" class="rounded-none border border-white/10 px-3 py-2">Nosotros</a>
+          <a href="cotizacion.html" class="rounded-none border border-white/10 px-3 py-2">Cotizacion</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="subnav-shell sticky top-[104px] z-40 border-b backdrop-blur md:top-[104px]">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <nav class="flex gap-3 overflow-x-auto py-4 text-sm font-semibold text-slate-600 [scrollbar-width:none]">
+        <a href="#corporativo" data-category-link="corporativo" class="whitespace-nowrap rounded-none border border-slate-200 px-4 py-2 transition hover:border-navy hover:text-navy">Corporativo</a>
+        <a href="#industrial" data-category-link="industrial" class="whitespace-nowrap rounded-none border border-slate-200 px-4 py-2 transition hover:border-navy hover:text-navy">Industrial</a>
+        <a href="#outdoor" data-category-link="outdoor" class="whitespace-nowrap rounded-none border border-slate-200 px-4 py-2 transition hover:border-navy hover:text-navy">Outdoor</a>
+        <a href="#epp" data-category-link="epp" class="whitespace-nowrap rounded-none border border-slate-200 px-4 py-2 transition hover:border-navy hover:text-navy">EPP</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="section-shell product-hero-shell border-b border-slate-900/10">
+      <div class="max-w-7xl mx-auto px-4 py-6 lg:px-8 lg:py-8">
+        <div class="product-hero-panel overflow-hidden rounded-none px-6 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-12">
+          <div class="max-w-4xl">
+            <p class="text-sm font-bold uppercase tracking-[0.34em] text-signal">Catalogo Kadol</p>
+            <h1 class="mt-4 max-w-5xl text-5xl font-black uppercase leading-none tracking-tight text-white sm:text-6xl">Catalogo tecnico de soluciones</h1>
+            <p class="mt-6 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">Vestuario corporativo, industrial, outdoor y elementos de proteccion personal organizados para cotizar mas rapido, con foco tecnico y seleccion por linea de uso real.</p>
+          </div>
+          <div class="product-brand-marquee mt-8">
+            <div id="product-brand-track" class="product-brand-track"></div>
+          </div>
+          <div class="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+            <a href="#industrial" class="product-quick-link">Industrial</a>
+            <a href="#corporativo" class="product-quick-link">Corporativo</a>
+            <a href="#outdoor" class="product-quick-link">Outdoor</a>
+            <a href="#epp" class="product-quick-link">EPP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="catalog-root"></div>
+
+    <section class="section-shell py-12">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="home-cta-panel rounded-none px-6 py-8 sm:px-8 sm:py-10 lg:px-12">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div class="max-w-2xl">
+              <p class="text-sm font-bold uppercase tracking-[0.32em] text-slate-950/70">Personalizacion experta</p>
+              <h2 class="mt-3 text-4xl font-black uppercase leading-none tracking-tight text-slate-950 sm:text-5xl">Cada linea puede configurarse con identidad visual, uso tecnico y continuidad de marca.</h2>
+              <p class="mt-4 text-base leading-7 text-slate-900/80">Bordado, estampado y seleccion de vestuario segun entorno de uso, rol operativo y estandar de presentacion para cada area.</p>
+            </div>
+            <a href="cotizacion.html" class="inline-flex items-center justify-center rounded-none bg-slate-950 px-6 py-4 text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-slate-800">Solicitar propuesta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 py-14 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[1.3fr_0.8fr_0.8fr_0.9fr]">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="flex h-10 w-10 items-center justify-center rounded-none bg-signal text-base font-black text-slate-950">K</span>
+            <div class="leading-tight">
+              <span class="block text-lg font-extrabold tracking-[0.16em] text-white">KADOL</span>
+              <span class="block text-[11px] uppercase tracking-[0.28em] text-slate-500">Soluciones Tecnicas</span>
+            </div>
+          </div>
+          <p class="mt-5 max-w-sm text-sm leading-7 text-slate-400">Vestuario corporativo, industrial, outdoor y elementos de proteccion personal con acompanamiento comercial y criterio tecnico.</p>
+        </div>
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-slate-500">Tienda</p>
+          <div class="mt-4 flex flex-col gap-3 text-sm">
+            <a href="#corporativo" class="transition hover:text-white">Corporativo</a>
+            <a href="#industrial" class="transition hover:text-white">Industrial</a>
+            <a href="#outdoor" class="transition hover:text-white">Outdoor</a>
+            <a href="#epp" class="transition hover:text-white">EPP</a>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-slate-500">Informacion</p>
+          <div class="mt-4 flex flex-col gap-3 text-sm">
+            <a href="index.html" class="transition hover:text-white">Inicio</a>
+            <a href="nosotros.html" class="transition hover:text-white">Nosotros</a>
+            <a href="cotizacion.html" class="transition hover:text-white">Solicitar cotizacion</a>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.24em] text-slate-500">Contacto</p>
+          <div class="mt-4 space-y-3 text-sm">
+            <p>ventas@kadol.cl</p>
+            <p>+56 9 8809 0687</p>
+            <p>Santiago, Chile</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-white/10 pt-6 text-xs text-slate-500">
+        &copy; 2026 Kadol SpA. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/56988090687" target="_blank" rel="noopener" aria-label="Hablar por WhatsApp con Kadol" class="fixed bottom-6 right-6 z-50 inline-flex h-16 w-16 items-center justify-center rounded-none bg-accent text-white shadow-2xl transition hover:scale-105 hover:brightness-110">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2C6.62 2 2.22 6.39 2.22 11.8c0 1.73.45 3.42 1.3 4.91L2 22l5.43-1.43a9.76 9.76 0 0 0 4.6 1.17h.01c5.4 0 9.79-4.4 9.79-9.8 0-2.62-1.02-5.08-2.78-6.99ZM12.04 20.1h-.01a8.13 8.13 0 0 1-4.14-1.13l-.3-.18-3.22.85.86-3.14-.2-.32a8.14 8.14 0 0 1-1.25-4.37c0-4.49 3.66-8.15 8.16-8.15 2.18 0 4.23.85 5.77 2.39a8.09 8.09 0 0 1 2.38 5.77c0 4.5-3.65 8.16-8.15 8.16Zm4.47-6.12c-.24-.12-1.41-.7-1.63-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.17-1.39-1.31-1.62-.14-.24-.01-.36.11-.48.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.79-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 1.99s.86 2.3.98 2.46c.12.16 1.68 2.56 4.07 3.59.57.24 1.01.39 1.35.5.57.18 1.08.16 1.49.1.45-.07 1.41-.58 1.61-1.15.2-.56.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28Z"/>
+    </svg>
+  </a>
+
+  <script>
+    const catalogData = [
+      {
+        category: 'CORPORATIVO',
+        slug: 'corporativo',
+        description: 'Categoría orientada a imagen institucional, atención de público y presentación profesional para oficina, cocina, guardia y recepción.',
+        lines: [
+          {
+            name: 'INSTITUCIONAL',
+            products: ['Blusa', 'Camisa', 'Chaqueta Geólogo Azul', 'Chaqueta Geólogo Gris', 'Chaqueta Geólogo Negra', 'Cortaviento', 'Cotona', 'Delantal', 'Gorro Tradicional', 'Jeans', 'Polar', 'Pantalón', 'Parka', 'Polera', 'Polerón', 'Softshell', 'Sweater']
+          },
+          {
+            name: 'COCINA',
+            products: ['Chaqueta', 'Gorro Tradicional', 'Mandiles', 'Pecheras']
+          },
+          {
+            name: 'GUARDIA Y RECEPCIÓN',
+            products: ['Blusa', 'Camisa', 'Chaqueta Geólogo Azul', 'Chaqueta Geólogo Gris', 'Chaqueta Geólogo Negra', 'Cortaviento', 'Gorro Tradicional', 'Polar', 'Pantalón', 'Parka', 'Polera', 'Polerón', 'Softshell', 'Sweater']
+          }
+        ]
+      },
+      {
+        category: 'INDUSTRIAL',
+        slug: 'industrial',
+        description: 'Ropa de trabajo pesado y operatividad técnica para terreno, alta visibilidad, control térmico y una línea exclusiva para minería.',
+        lines: [
+          {
+            name: 'INDUSTRIAL',
+            products: ['Casaca', 'Chaleco', 'Cortaviento', 'Jardinera', 'Jockey', 'Overol', 'Pantalón', 'Parka', 'Polar', 'Polera', 'Primera Capa', 'Softshell']
+          },
+          {
+            name: 'ALTA VISIBILIDAD',
+            products: ['Chaleco', 'Jardinera', 'Parka', 'Polar', 'Polera', 'Softshell']
+          },
+          {
+            name: 'TÉRMICO',
+            products: ['Jardinera', 'Parka', 'Primera Capa']
+          },
+          {
+            name: 'MINERÍA',
+            products: ['Chaleco', 'Jardinera', 'Overol', 'Pantalón', 'Parka', 'Polar', 'Polera', 'Primera Capa', 'Softshell']
+          }
+        ]
+      },
+      {
+        category: 'OUTDOOR',
+        slug: 'outdoor',
+        description: 'Vestuario para clima exigente y desplazamiento exterior, pensado para lluvia, frío, media temporada y trabajo a la intemperie sin mezclar línea minera.',
+        lines: [
+          {
+            name: 'OUTDOOR',
+            products: ['Cortaviento', 'Pantalón', 'Parka', 'Polar', 'Primera Capa', 'Softshell']
+          }
+        ]
+      },
+      {
+        category: 'ELEMENTOS PROTECCIÓN PERSONAL (EPP)',
+        slug: 'epp',
+        description: 'Elementos de protección personal para cabeza, respiración, altura y ropa de trabajo especializada en operación técnica.',
+        lines: [
+          {
+            name: 'PROTECCIÓN CABEZA',
+            products: ['Cascos', 'Accesorios para cascos', 'Gorro Tradicional', 'Cubre nuca', 'Tapones', 'Fonos', 'Lentes', 'Antiparras', 'Mascaras de soldar', 'Visores y otros']
+          },
+          {
+            name: 'PROTECCIÓN RESPIRATORIA',
+            products: ['Respiradores', 'Filtros', 'Mascarillas']
+          },
+          {
+            name: 'PROTECCIÓN ALTURA',
+            products: ['Arneses', 'Amortiguadores', 'Cinturones', 'Accesorios altura', 'Cabos de vida']
+          },
+          {
+            name: 'ROPA DE TRABAJO ESPECIALIZADA',
+            products: ['Impermeable', 'Desechables', 'Cuero', 'Ignífugo']
+          }
+        ]
+      }
+    ];
+
+    const realImages = {
+      blusa: 'assets/img-catalogo/corporativo/institucional/blusa.jpg',
+      casaca: 'assets/img-catalogo/industrial/casaca.jpg',
+      cascos: 'assets/img-catalogo/EPP/proteccion-cabeza/casco.png',
+      'accesorios para cascos': 'assets/img-catalogo/EPP/proteccion-cabeza/accesorios-cascos.png',
+      camisa: 'assets/img-catalogo/corporativo/institucional/camisa.jpg',
+      chaleco: 'assets/img-catalogo/industrial/chaleco.jpg',
+      'cabos de vida': 'assets/img-catalogo/EPP/proteccion-altura/cabos-de-videa.jpg',
+      cuero: 'assets/img-catalogo/EPP/ropa-de-trabajo/cuero.jpg',
+      cortaviento: 'assets/img-catalogo/corporativo/institucional/cortaviento.jpg',
+      cotona: 'assets/img-catalogo/corporativo/institucional/cotona.jpg',
+      'cubre nuca': 'assets/img-catalogo/EPP/proteccion-cabeza/cubrenuca.png',
+      desechables: 'assets/img-catalogo/EPP/ropa-de-trabajo/desechables.jpg',
+      delantal: 'assets/img-catalogo/corporativo/institucional/delantal.jpg',
+      fonos: 'assets/img-catalogo/EPP/proteccion-cabeza/fono.jpg',
+      'gorro tradicional': 'assets/img-catalogo/EPP/proteccion-cabeza/jockey.png',
+      ignifugo: 'assets/img-catalogo/EPP/ropa-de-trabajo/ignifugo.jpg',
+      impermeable: 'assets/img-catalogo/EPP/ropa-de-trabajo/impermeables.png',
+      jeans: 'assets/img-catalogo/corporativo/institucional/jeans.jpg',
+      jardinera: 'assets/img-catalogo/industrial/jardinera.jpg',
+      jockey: 'assets/img-catalogo/corporativo/institucional/jockey-corporativo.webp',
+      'chaqueta geologo azul': 'assets/img-catalogo/industrial/casaca.jpg',
+      'chaqueta geologo gris': 'assets/img-catalogo/corporativo/institucional/softshell.jpg',
+      'chaqueta geologo negra': 'assets/img-catalogo/corporativo/institucional/parka.jpg',
+      lentes: 'assets/img-catalogo/EPP/proteccion-cabeza/lentes.jpg',
+      antiparras: 'assets/img-catalogo/EPP/proteccion-cabeza/antiparras.png',
+      'mascaras de soldar': 'assets/img-catalogo/EPP/proteccion-cabeza/mascaras-soldar.png',
+      arneses: 'assets/img-catalogo/EPP/proteccion-altura/arnes.jpg',
+      amortiguadores: 'assets/img-catalogo/EPP/proteccion-altura/amortiguadores.jpg',
+      cinturones: 'assets/img-catalogo/EPP/proteccion-altura/cinturon.png',
+      'accesorios altura': 'assets/img-catalogo/EPP/proteccion-altura/accesorios-altura.jpg',
+      overol: 'assets/img-catalogo/industrial/overol.jpg',
+      pantalon: 'assets/img-catalogo/corporativo/institucional/pantalon.jpg',
+      parka: 'assets/img-catalogo/corporativo/institucional/parka.jpg',
+      polar: 'assets/img-catalogo/corporativo/institucional/polar.jpg',
+      polera: 'assets/img-catalogo/corporativo/institucional/polera.jpg',
+      poleron: 'assets/img-catalogo/corporativo/institucional/poleron.jpg',
+      'primera capa': 'assets/img-catalogo/industrial/primera-capa.jpg',
+      respiradores: 'assets/img/banners-hero/epp.jpg',
+      filtros: 'assets/img/banners-hero/epp.jpg',
+      mascarillas: 'assets/img/banners-hero/epp.jpg',
+      softshell: 'assets/img-catalogo/corporativo/institucional/softshell.jpg',
+      sweater: 'assets/img-catalogo/corporativo/institucional/sweater.jpg',
+      tapones: 'assets/img-catalogo/EPP/proteccion-cabeza/tapones.jpg',
+      'visores y otros': 'assets/img-catalogo/EPP/proteccion-cabeza/visores.jpg'
+    };
+
+    const brandLogos = {
+      '3M': 'assets/img/logos-marcas/3m.png',
+      'Bunker': 'assets/img/logos-marcas/bunker.png',
+      'Caterpillar': 'assets/img/logos-marcas/caterpillar.png',
+      'CTA Work': 'assets/img/logos-marcas/ctawork.png',
+      'Edelbrok': 'assets/img/logos-marcas/edelbrok.png',
+      'Fulltex': 'assets/img/logos-marcas/fulltex.png',
+      'Hard Work (HW)': 'assets/img/logos-marcas/hardwork.png',
+      'Jayson': 'assets/img/logos-marcas/jayson.png',
+      'Libus': 'assets/img/logos-marcas/libus.png',
+      'Lippi': 'assets/img/logos-marcas/lippi.png',
+      'Masprot': 'assets/img/logos-marcas/masprot.png',
+      'MSA': 'assets/img/logos-marcas/msa.png',
+      'Nazca': 'assets/img/logos-marcas/nazca.png',
+      'Norseg': 'assets/img/logos-marcas/norseg.png',
+      'Panama': 'assets/img/logos-marcas/panama.png',
+      'Proflex': 'assets/img/logos-marcas/proflex.png',
+      'Puma': 'assets/img/logos-marcas/puma.png',
+      'Segma': 'assets/img/logos-marcas/segma.png',
+      'Steelpro': 'assets/img/logos-marcas/steelpro.png',
+      'T-World': 'assets/img/logos-marcas/tworld.png',
+      'Tempest': 'assets/img/logos-marcas/tempest.png'
+    };
+
+    const brandDataByCategory = {
+      corporativo: [
+        {
+          label: 'Marcas de ropa',
+          brands: ['Hard Work (HW)', 'T-World', 'Jayson', 'CTA Work', 'Fulltex']
+        }
+      ],
+      industrial: [
+        {
+          label: 'Marcas de ropa',
+          brands: ['Hard Work (HW)', 'T-World', 'Jayson', 'CTA Work', 'Fulltex', 'Caterpillar']
+        }
+      ],
+      outdoor: [
+        {
+          label: 'Marcas de ropa',
+          brands: ['Hard Work (HW)', 'T-World', 'Jayson', 'Panama', 'Lippi', 'Puma']
+        }
+      ],
+      epp: [
+        {
+          label: 'Cabeza',
+          brands: ['Steelpro', '3M', 'MSA', 'Segma', 'Masprot']
+        },
+        {
+          label: 'Auditiva',
+          brands: ['Steelpro', '3M', 'Masprot', 'Libus']
+        },
+        {
+          label: 'Visual',
+          brands: ['Steelpro', '3M', 'Libus', 'Bunker']
+        },
+        {
+          label: 'Manos',
+          brands: ['Steelpro', '3M', 'Ansell']
+        },
+        {
+          label: 'Respiratoria',
+          brands: ['3M', 'Masprot']
+        },
+        {
+          label: 'Altura',
+          brands: ['Segma', '3M']
+        }
+      ]
+    };
+
+    const marqueeBrands = ['3M', 'Ansell', 'Steelpro', 'MSA', 'Libus', 'Masprot', 'Bunker', 'Segma', 'Puma', 'Caterpillar', 'Hard Work (HW)', 'T-World'];
+
+    const categoryHeroData = {
+      corporativo: {
+        src: 'assets/img/banners-hero/corporativo.png',
+        imagePosition: '62% top',
+        eyebrow: 'Imagen institucional'
+      },
+      industrial: {
+        src: 'assets/img/banners-hero/industrial.png',
+        imagePosition: '58% top',
+        eyebrow: 'Trabajo pesado y operacion'
+      },
+      outdoor: {
+        src: 'assets/img/banners-hero/outdoor.png',
+        imagePosition: '68% top',
+        eyebrow: 'Clima exigente y terreno'
+      },
+      epp: {
+        src: 'assets/img/banners-hero/epp.jpg',
+        imagePosition: '64% top',
+        eyebrow: 'Proteccion personal'
+      }
+    };
+
+    const aliasMap = {
+      'pantalón': 'pantalon',
+      gorros: 'gorro tradicional',
+      'mandiles': 'delantal',
+      'pecheras': 'delantal',
+      'windshell': 'cortaviento'
+    };
+
+    function normalizeText(value) {
+      return value
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9\s]/g, '')
+        .trim()
+        .replace(/\s+/g, ' ');
+    }
+
+    function productKey(productName) {
+      const normalized = normalizeText(productName);
+      return aliasMap[normalized] || normalized;
+    }
+
+    function slugify(value) {
+      return normalizeText(value).replace(/\s+/g, '-');
+    }
+
+    function placeholderImage(label) {
+      const safeLabel = encodeURIComponent(label);
+      return `data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 520'%3E%3Crect width='800' height='520' fill='%23f8fafc'/%3E%3Cg stroke='%23cbd5e1' stroke-width='2'%3E%3Crect x='40' y='40' width='720' height='440' rx='32' fill='none' stroke-dasharray='10 12'/%3E%3Cpath d='M120 360l120-120 90 90 150-170 200 200' fill='none'/%3E%3Ccircle cx='250' cy='170' r='34' fill='none'/%3E%3C/g%3E%3Ctext x='400' y='430' fill='%2364758b' font-family='Inter, Arial, sans-serif' font-size='34' font-weight='700' text-anchor='middle'%3E${safeLabel}%3C/text%3E%3C/svg%3E`;
+    }
+
+    function resolveImage(productName, categorySlug) {
+      const key = productKey(productName);
+      if (realImages[key]) {
+        return {
+          src: realImages[key],
+          alt: `${productName} Kadol`,
+          fitClass: categorySlug === 'corporativo' && key === 'jockey' ? 'object-contain p-3' : 'object-cover'
+        };
+      }
+      return {
+        src: placeholderImage(productName),
+        alt: `Placeholder neutro para ${productName}`,
+        fitClass: 'object-cover'
+      };
+    }
+
+    function renderProductCard(productName, categorySlug) {
+      const image = resolveImage(productName, categorySlug);
+      return `
+        <article class="surface-card product-card border p-5">
+          <div class="aspect-[4/5] overflow-hidden rounded-sm bg-slate-100">
+            <img class="h-full w-full ${image.fitClass}" src="${image.src}" alt="${image.alt}">
+          </div>
+          <div class="mt-5">
+            <span class="inline-flex rounded-sm border border-accent/10 bg-accent/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-accent">Personalizable</span>
+            <h4 class="mt-4 text-xl font-bold text-navy">${productName}</h4>
+            <a href="cotizacion.html" class="mt-5 inline-flex items-center rounded-none bg-signal px-4 py-3 text-sm font-bold uppercase tracking-[0.14em] text-slate-950 transition hover:brightness-105">Cotizar producto</a>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderBrandCard(brandName) {
+      const logo = brandLogos[brandName];
+      if (!logo) return '';
+
+      return `
+        <div class="brand-chip flex h-11 min-w-[92px] items-center justify-center rounded-none border px-4 py-2">
+          <img src="${logo}" alt="Logo ${brandName}" class="max-h-6 w-full object-contain">
+        </div>
+      `;
+    }
+
+    function renderBrandGroups(categorySlug) {
+      const groups = brandDataByCategory[categorySlug] || [];
+      const uniqueBrands = [...new Set(
+        groups.flatMap((group) => group.brands).filter((brand) => brandLogos[brand])
+      )];
+
+      if (uniqueBrands.length === 0) return '';
+      return `
+        <div class="w-full max-w-xl">
+          <div class="mb-3 text-[11px] font-bold uppercase tracking-[0.24em] text-slate-400">Marcas disponibles</div>
+          <div class="flex flex-wrap gap-3">
+            ${uniqueBrands.map((brandName) => renderBrandCard(brandName)).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderCategoryHeader(category, index) {
+      const hero = categoryHeroData[category.slug];
+
+      if (!hero) {
+        return `
+          <div class="category-banner-shell overflow-hidden rounded-none text-white">
+            <div class="relative h-[220px] sm:h-[260px] lg:h-[300px]">
+              <img src="${categoryHeroData[category.slug].src}" alt="${category.category} Kadol" class="h-full w-full object-cover" style="object-position: ${categoryHeroData[category.slug].imagePosition};">
+              <div class="absolute inset-0 bg-gradient-to-r from-[#101820]/74 via-[#101820]/28 to-[#101820]/18"></div>
+              <div class="absolute inset-x-0 bottom-0 p-6 sm:p-8 lg:p-10">
+                <p class="text-sm font-bold uppercase tracking-[0.3em] text-signal">${categoryHeroData[category.slug].eyebrow}</p>
+                <h2 class="mt-3 text-5xl font-black uppercase leading-none tracking-tight text-white sm:text-6xl">${category.category}</h2>
+                <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-200 sm:text-base">${category.description}</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 flex flex-col gap-10 xl:flex-row xl:items-end xl:justify-between">
+            <div class="max-w-4xl">
+              <p class="text-sm font-bold uppercase tracking-[0.3em] text-accent">Linea tecnica</p>
+              <h3 class="mt-4 text-3xl font-black uppercase tracking-tight text-navy sm:text-4xl">${category.category}</h3>
+              <p class="mt-4 text-base leading-7 text-slate-600">${category.description}</p>
+            </div>
+            ${renderBrandGroups(category.slug)}
+          </div>
+        `;
+      }
+
+      return `
+        <div class="category-banner-shell overflow-hidden rounded-none text-white">
+          <div class="relative h-[240px] sm:h-[280px] lg:h-[320px]">
+            <img src="${hero.src}" alt="${category.category} Kadol" class="h-full w-full object-cover" style="object-position: ${hero.imagePosition};">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#101820]/74 via-[#101820]/28 to-[#101820]/18"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 sm:p-8 lg:p-10">
+              <p class="text-sm font-bold uppercase tracking-[0.3em] text-signal">${hero.eyebrow}</p>
+              <h2 class="mt-3 text-5xl font-black uppercase leading-none tracking-tight text-white sm:text-6xl">${category.category}</h2>
+              <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-200 sm:text-base">${category.description}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function gridColumns(count) {
+      if (count <= 2) return 'grid gap-6 sm:grid-cols-2';
+      if (count === 3) return 'grid gap-6 sm:grid-cols-2 xl:grid-cols-3';
+      return 'grid gap-6 sm:grid-cols-2 xl:grid-cols-4';
+    }
+
+    function renderLine(categorySlug, line) {
+      const lineSlug = `${categorySlug}-${slugify(line.name)}`;
+      return `
+        <section id="${lineSlug}" class="line-shell scroll-mt-40 rounded-sm border p-8 lg:p-10">
+          <div class="flex flex-col gap-4 border-b border-slate-200 pb-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-[0.28em] text-slate-400">Línea</p>
+              <h3 class="mt-2 text-2xl font-bold text-navy">${line.name}</h3>
+            </div>
+            <p class="max-w-2xl text-sm leading-6 text-slate-500">${line.products.length} producto(s) en esta línea.</p>
+          </div>
+          <div class="mt-8 ${gridColumns(line.products.length)}">
+            ${line.products.map((productName) => renderProductCard(productName, categorySlug)).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    function renderCategory(category, index) {
+      return `
+        <section id="${category.slug}" data-category-section="${category.slug}" data-category-name="${category.category}" class="category-shell category-${category.slug} scroll-mt-40 border-b border-slate-200/60 py-24">
+          <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            ${renderCategoryHeader(category, index)}
+            <div class="mt-8 flex flex-wrap gap-3">
+              ${category.lines.map((line) => `
+                <a href="#${category.slug}-${slugify(line.name)}" class="inline-flex items-center rounded-none border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-navy hover:bg-navy hover:text-white">
+                  Ir a ${line.name}
+                </a>
+              `).join('')}
+            </div>
+            <div class="mt-14 space-y-10">
+              ${category.lines.map((line) => renderLine(category.slug, line)).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    document.getElementById('catalog-root').innerHTML = catalogData.map(renderCategory).join('');
+
+    const brandTrack = document.getElementById('product-brand-track');
+    const brandItems = marqueeBrands
+      .filter((brandName) => brandLogos[brandName])
+      .map((brandName) => `
+        <div class="product-brand-item">
+          <img src="${brandLogos[brandName]}" alt="Logo ${brandName}" class="product-brand-logo">
+        </div>
+      `)
+      .join('');
+    brandTrack.innerHTML = `${brandItems}${brandItems}`;
+
+    const categorySections = Array.from(document.querySelectorAll('[data-category-section]'));
+    const categoryLinks = Array.from(document.querySelectorAll('[data-category-link]'));
+
+    function setActiveCategoryLink(slug) {
+      categoryLinks.forEach((link) => {
+        const isActive = link.dataset.categoryLink === slug;
+        link.classList.toggle('bg-navy', isActive);
+        link.classList.toggle('text-white', isActive);
+        link.classList.toggle('border-navy', isActive);
+        link.classList.toggle('shadow-sm', isActive);
+        link.classList.toggle('text-slate-600', !isActive);
+      });
+    }
+
+    function updateActiveCategoryLinkOnScroll() {
+      const scrollAnchor = window.scrollY + 180;
+      let currentSlug = catalogData[0].slug;
+
+      categorySections.forEach((section) => {
+        if (scrollAnchor >= section.offsetTop) {
+          currentSlug = section.dataset.categorySection;
+        }
+      });
+
+      setActiveCategoryLink(currentSlug);
+    }
+
+    window.addEventListener('scroll', updateActiveCategoryLinkOnScroll, { passive: true });
+    window.addEventListener('resize', updateActiveCategoryLinkOnScroll);
+    updateActiveCategoryLinkOnScroll();
+
+  </script>
+</body>
+</html>
