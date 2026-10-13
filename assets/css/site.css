@@ -240,10 +240,9 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; letter-spacing: -0.025em; 
 .ledger strong { display: block; font-size: 52px; font-weight: 700; font-stretch: 112%; line-height: 1; letter-spacing: -0.03em; color: var(--ink); }
 .ledger h3 { margin-top: 14px; font-size: 19px; letter-spacing: -0.01em; }
 .ledger p { margin-top: 8px; font-size: 15px; color: var(--muted); }
-.gallery { columns: 4 220px; column-gap: 10px; }
-.gallery button { display: block; width: 100%; margin: 0 0 10px; padding: 0; border: 0; background: #d9dadc; cursor: zoom-in; break-inside: avoid; }
-.gallery img { width: 100%; transition: opacity .2s; }
-.gallery button:hover img { opacity: .85; }
+.works-board button { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.works-board img { width: 100%; transition: opacity .2s; }
+.works-board button:hover img { opacity: .92; }
 .lightbox { position: fixed; inset: 0; z-index: 100; display: none; place-items: center; padding: 24px; background: rgba(23,32,42,.96); }
 .lightbox.is-open { display: grid; }
 .lightbox img { max-width: 100%; max-height: 88vh; object-fit: contain; }
