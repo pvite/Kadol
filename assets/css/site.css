@@ -240,14 +240,19 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; letter-spacing: -0.025em; 
 .ledger strong { display: block; font-size: 52px; font-weight: 700; font-stretch: 112%; line-height: 1; letter-spacing: -0.03em; color: var(--ink); }
 .ledger h3 { margin-top: 14px; font-size: 19px; letter-spacing: -0.01em; }
 .ledger p { margin-top: 8px; font-size: 15px; color: var(--muted); }
-.works-board button { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
-.works-board img { width: 100%; transition: opacity .2s; }
-.works-board button:hover img { opacity: .92; }
-.works-board figcaption { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.works-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.works-grid button { display: block; width: 100%; padding: 0; border: 0; background: var(--paper-2); overflow: hidden; cursor: zoom-in; }
+.works-grid img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .4s ease, opacity .2s; }
+.works-grid button:hover img { transform: scale(1.03); opacity: .94; }
+.works-board figcaption { margin-top: 14px; font-size: 13px; color: var(--muted); }
 .lightbox { position: fixed; inset: 0; z-index: 100; display: none; place-items: center; padding: 24px; background: rgba(23,32,42,.96); }
 .lightbox.is-open { display: grid; }
 .lightbox img { max-width: 100%; max-height: 88vh; object-fit: contain; }
 .lightbox-close { position: absolute; top: 16px; right: 16px; padding: 10px 14px; border: 1px solid rgba(255,255,255,.35); border-radius: 2px; background: transparent; color: var(--white); font: 500 15px/1 var(--font); cursor: pointer; }
+.lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border: 1px solid rgba(255,255,255,.35); border-radius: 2px; background: rgba(23,32,42,.6); color: var(--white); font: 500 20px/1 var(--font); cursor: pointer; }
+.lightbox-prev { left: 16px; }
+.lightbox-next { right: 16px; }
+.lightbox-nav:hover { background: var(--white); color: var(--ink); }
 .lightbox-close:hover { background: var(--white); color: var(--ink); }
 
 /* Footer */
@@ -277,12 +282,15 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; letter-spacing: -0.025em; 
   .cover-grid { gap: 40px; }
   .brand-grid { grid-template-columns: repeat(5, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .works-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
   :root { --gutter: 16px; --radius-card: 12px; }
   body { font-size: 16px; }
   .sec { padding: 72px 0; }
   .sec--flush { padding-top: 0; }
+  .works-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .lightbox-nav { top: auto; bottom: 16px; transform: none; }
   .sec-head { margin-bottom: 36px; }
   .sec-head p { font-size: 17px; }
   .kicker { font-size: 15px; margin-bottom: 12px; }
