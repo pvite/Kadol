@@ -89,7 +89,7 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; letter-spacing: -0.025em; 
 
 /* Portada */
 .cover { padding: 56px 0 0; }
-.cover-grid { display: grid; grid-template-columns: 6fr 6fr; gap: 56px; align-items: end; }
+.cover-grid { display: grid; grid-template-columns: 6fr 6fr; gap: 56px; align-items: start; }
 .cover h1 { font-size: clamp(48px, 6.6vw, 100px); letter-spacing: -0.04em; line-height: .98; }
 .cover h1 span { color: var(--accent); }
 .cover-lead { margin-top: 28px; max-width: 480px; font-size: 20px; line-height: 1.5; }
