@@ -270,7 +270,33 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; letter-spacing: -0.025em; 
 .lightbox-close:hover { background: var(--white); color: var(--ink); }
 
 /* Footer */
-.site-footer { background: var(--ink); color: #a3adb5; font-size: 15px; }
+.site-footer { position: relative; isolation: isolate; overflow: hidden; background: var(--ink); color: #a3adb5; font-size: 15px; }
+/* Logo y nombre de Kadöl como marca de agua de fondo */
+.site-footer::before,
+.site-footer::after { position: absolute; z-index: -1; pointer-events: none; }
+.site-footer::before {
+  content: "";
+  right: max(var(--gutter), calc((100% - var(--wrap)) / 2 + var(--gutter)));
+  bottom: -24px;
+  width: 316px;
+  aspect-ratio: 544 / 624;
+  background: url("../img/logo-kadol.svg") no-repeat center / contain;
+  opacity: .07;
+}
+.site-footer::after {
+  content: "KAD\00D6L";
+  content: "KAD\00D6L" / "";
+  right: max(var(--gutter), calc((100% - var(--wrap)) / 2 + var(--gutter)));
+  bottom: -0.2em;
+  font-size: clamp(88px, 13vw, 184px);
+  font-weight: 800;
+  font-stretch: 125%;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #fff;
+  opacity: .04;
+  user-select: none;
+}
 .footer-grid { display: grid; grid-template-columns: 5fr 2fr 3fr 2fr; gap: 40px; padding-top: 64px; padding-bottom: 56px; }
 .footer-grid .wordmark { color: var(--white); }
 .footer-about p { margin-top: 16px; max-width: 340px; }
@@ -291,6 +317,7 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; letter-spacing: -0.025em; 
   .cover-grid { gap: 40px; }
   .brand-grid { --cols: 5; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .site-footer::after { bottom: 54px; }
   .cases-grid { --cols: 2; }
   .works-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
@@ -346,6 +373,8 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; letter-spacing: -0.025em; 
   .contact { padding-bottom: 72px; gap: 48px; }
   .form { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; padding-top: 48px; padding-bottom: 32px; }
+  .site-footer::before { width: min(300px, 78vw); bottom: 40px; }
+  .site-footer::after { font-size: 21vw; bottom: 54px; }
 }
 @media (max-width: 380px) {
   .wordmark { font-size: 20px; }
