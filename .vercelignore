@@ -1,0 +1,8 @@
+# Archivos internos que no deben publicarse en el sitio
+_prompt-optimizacion.md
+*.md
+CNAME
+.gitattributes
+.gitignore
+.DS_Store
+**/.DS_Store
